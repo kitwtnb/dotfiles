@@ -54,4 +54,5 @@ alias g='cd $(ghq root)/$(ghq list | peco)'
 alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 alias gs='git status'
 alias gco='git checkout `git branch | peco | sed -e "s/\* //g" | awk "{print \$1}"`'
+alias ghr='ghq list --full-path | peco | xargs rm -r'
 
