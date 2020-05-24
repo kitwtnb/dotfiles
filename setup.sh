@@ -18,6 +18,7 @@ brew install swiftformat
 brew install swiftlint
 brew install yarn
 brew install zsh-completions
+gem install cocoapods
 
 # install GUI Apps
 brew cask install alfred
