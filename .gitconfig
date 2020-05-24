@@ -1,10 +1,10 @@
 [user]
 	name = Keita Watanabe
-	email = Nal3eCh@gmail.com
+	email = watanabe.kit@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
 [ghq]
-	root = ~/github
+	root = ~/repository
 [alias]
 	graph = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %C(cyan)%cn %C(auto)%d %Creset%s'
 
