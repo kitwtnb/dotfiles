@@ -1,5 +1,3 @@
-export LANG=ja_JP.UTF-8
-
 # change prompt style
 setopt prompt_subst
 PROMPT='
@@ -38,10 +36,13 @@ zstyle ':completion:*' list-colors "${LSCOLORS}"
 setopt auto_cd
 
 # export
+export LANG=ja_JP.UTF-8
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/homebrew/bin:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools/:$PATH
+export PATH=$JAVA_HOME/bin:$PATH
 
 # alias
 alias l='ls -laG'
