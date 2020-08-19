@@ -50,5 +50,4 @@ ln -sf ./repository/github.com/kitwtnb/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ./repository/github.com/kitwtnb/dotfiles/.gitignore_global ~/.gitignore_global
 ln -sf ./repository/github.com/kitwtnb/dotfiles/.iterm2 ~/.iterm2
 ln -sf ./repository/github.com/kitwtnb/dotfiles/.zshrc ~/.zshrc
-cp -f ./.oh-my-zsh/custom/themes/mytheme.zsh-theme ~/.oh-my-zsh/custom/themes/
 cp -r ./.config ~/.config

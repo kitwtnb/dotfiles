@@ -1,57 +1,93 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="mytheme"
-
-# Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-# You may need to manually set your language environment
 export LANG=ja_JP.UTF-8
 
-# using color
-autoload -Uz colorz
-colors
+# change prompt style
+setopt prompt_subst
+PROMPT='
+%F{magenta}%n@%m%f: %F{cyan}%~%f `prompt_git_current_branch`
+%# '
 
-# auto complete
-autoload -Uz compinit
-compinit
-
-# config history
+# history
+setopt extended_history
 setopt histignorealldups
+setopt hist_ignore_all_dups
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
-# omit directory name
+# completion
+autoload -U compinit
+compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+zstyle ':completion:*:default' menu true select=1
+
+# history completion
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search
+
+# color
+export LSCOLORS=gxfxcxdxbxegedabagacad
+export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+autoload colors
+zstyle ':completion:*' list-colors "${LSCOLORS}"
+
+# cd
 setopt auto_cd
 
-# correct command
-setopt correct
-
-# zsh-completions
-if [ -e /usr/local/share/zsh-completions ]; then
-    fpath=(/usr/local/share/zsh-completions $fpath)
-fi
+# export
+export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/bin:$PATH
+export PATH=$HOME/homebrew/bin:$PATH
+export PATH=$HOME/Library/Android/sdk/platform-tools/:$PATH
 
 # alias
+alias l='ls -laG'
 alias p='pwd'
 alias g='cd $(ghq root)/$(ghq list | peco)'
-alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 alias gs='git status'
+alias gc='git commit -m'
 alias gco='git checkout `git branch | peco | sed -e "s/\* //g" | awk "{print \$1}"`'
 alias ghr='ghq list --full-path | peco | xargs rm -r'
+alias ggraph='git log --graph --date=short --decorate=short --pretty=format:"%Cgreen%h %Creset%cd %C(cyan)%cn %C(auto)%d %Creset%s"'
+
+# function
+function prompt_git_current_branch {
+  local branch_name st branch_status mark
+
+  if [ ! -e  ".git" ]; then
+    # no git repository
+    return
+  fi
+
+  branch_name=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
+  st=`git status 2> /dev/null`
+  if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
+    # all commited
+    branch_status="%F{green}"
+  elif [[ -n `echo "$st" | grep "^Untracked files"` ]]; then
+    # untracked
+    branch_status="%F{red}"
+    mark="?"
+  elif [[ -n `echo "$st" | grep "^Changes not staged for commit"` ]]; then
+    # unstaged
+    branch_status="%F{red}"
+    mark="+"
+  elif [[ -n `echo "$st" | grep "^Changes to be committed"` ]]; then
+    # uncomitted
+    branch_status="%F{yellow}"
+    mark="!"
+  elif [[ -n `echo "$st" | grep "^rebase in progress"` ]]; then
+    # conflicted
+    echo "%F{red}"
+    mark=" conflicted"
+    return
+  else
+    # other
+    branch_status="%F{blue}"
+  fi
+
+  echo "${branch_status}($branch_name)$mark%f"
+}

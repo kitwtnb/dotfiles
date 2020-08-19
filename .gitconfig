@@ -5,6 +5,3 @@
 	excludesfile = ~/.gitignore_global
 [ghq]
 	root = ~/repository
-[alias]
-	graph = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %C(cyan)%cn %C(auto)%d %Creset%s'
-
