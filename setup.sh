@@ -32,6 +32,7 @@ brew cask install iterm2
 brew cask install jetbrains-toolbox
 brew cask install karabiner-elements
 brew cask install visual-studio-code
+brew cask install fork
 brew cask install charles
 mas install 1333542190 # 1Password
 mas install 417375580 # BetterSnapTool
