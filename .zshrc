@@ -62,6 +62,7 @@ alias gpp='git push --set-upstream origin `git symbolic-ref --short HEAD`'
 alias gpull='git pull'
 alias ghr='ghq list --full-path | peco | xargs rm -r'
 alias ggraph='git log --graph --date=short --decorate=short --pretty=format:"%Cgreen%h %Creset%cd %C(cyan)%cn %C(auto)%d %Creset%s"'
+alias cjava='export JAVA_HOME=`/usr/libexec/java_home -V 2>&1 | grep -E "^ " | sed "s/^ *//" | peco | cut -f 3`'
 
 # function
 function prompt_git_current_branch {
