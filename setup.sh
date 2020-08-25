@@ -47,8 +47,9 @@ mas install 1384080005 # Tweetbot
 cp -f ./.gitconfig ~/
 ghq get kitwtnb/dotfiles
 
-ln -sf ./repository/github.com/kitwtnb/dotfiles/.gitconfig ~/.gitconfig
-ln -sf ./repository/github.com/kitwtnb/dotfiles/.gitignore_global ~/.gitignore_global
-ln -sf ./repository/github.com/kitwtnb/dotfiles/.iterm2 ~/.iterm2
-ln -sf ./repository/github.com/kitwtnb/dotfiles/.zshrc ~/.zshrc
+ln -sf $HOME/repository/github.com/kitwtnb/dotfiles/.gitconfig $HOME/.gitconfig
+ln -sf $HOME/repository/github.com/kitwtnb/dotfiles/.gitignore_global $HOME/.gitignore_global
+ln -sf $HOME/repository/github.com/kitwtnb/dotfiles/.iterm2 $HOME/.iterm2
+ln -sf $HOME/repository/github.com/kitwtnb/dotfiles/.zshrc $HOME/.zshrc
+ln -sf $HOME/repository/github.com/kitwtnb/dotfiles/bin $HOME/bin
 cp -r ./.config ~/.config
