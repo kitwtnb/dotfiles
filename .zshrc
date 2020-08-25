@@ -37,7 +37,6 @@ setopt auto_cd
 
 # export
 export LANG=ja_JP.UTF-8
-export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/homebrew/bin:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools/:$PATH
