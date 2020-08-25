@@ -42,7 +42,6 @@ export PATH=$HOME/bin:$PATH
 export PATH=$HOME/homebrew/bin:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools/:$PATH
 export PATH=$JAVA_HOME/bin:$PATH
-export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 
 # alias
 alias l='ls -laG'
