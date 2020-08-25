@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -ue -o pipefail
+export LC_ALL=C
+
+DEVICE_NAME=`adb devices | sed -e '1d' | cut -f 1 | peco`
+echo "Capturing $DEVICE_NAME"
+
+SAVE_PATH="$HOME/Downloads/capture.png"
+adb -s $DEVICE_NAME shell screencap -p /sdcard/screen.png
+adb -s $DEVICE_NAME pull /sdcard/screen.png $SAVE_PATH
+adb -s $DEVICE_NAME shell rm /sdcard/screen.png
+
+echo "Saved image to $SAVE_PATH"
