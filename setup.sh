@@ -35,6 +35,7 @@ brew cask install visual-studio-code
 brew cask install fork
 brew cask install charles
 brew cask install discord
+brew cask install microsoft-teams
 mas install 1333542190 # 1Password
 mas install 417375580 # BetterSnapTool
 mas install 497799835 # Xcode
