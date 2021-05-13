@@ -24,7 +24,6 @@ gem install cocoapods
 # install GUI Apps
 brew cask install alfred
 brew cask install bettertouchtool
-brew cask install gitkraken
 brew cask install google-backup-and-sync
 brew cask install google-chrome
 brew cask install google-japanese-ime
