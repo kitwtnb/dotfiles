@@ -7,6 +7,7 @@ brew update
 # install package manager
 brew install cask
 brew install mas
+brew install mint
 
 # install CLI Apps
 brew install carthage
