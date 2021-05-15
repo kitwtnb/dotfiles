@@ -10,6 +10,7 @@ brew install mas
 brew install mint
 
 # install CLI Apps
+brew install go
 brew install carthage
 brew install ghq
 brew install hub
