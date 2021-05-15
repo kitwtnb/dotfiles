@@ -16,8 +16,6 @@ brew install ghq
 brew install hub
 brew install node
 brew install peco
-brew install swiftformat
-brew install swiftlint
 brew install yarn
 brew install zsh-completions
 
