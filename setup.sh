@@ -20,6 +20,9 @@ brew install swiftformat
 brew install swiftlint
 brew install yarn
 brew install zsh-completions
+
+go install github.com/cuonglm/gogi/cmd/gogi@latest
+
 gem install cocoapods
 
 # install GUI Apps
