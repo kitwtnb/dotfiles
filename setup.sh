@@ -11,7 +11,7 @@ brew install mint
 
 # install CLI Apps
 brew install go
-brew install carthage
+brew install rbenv
 brew install ghq
 brew install hub
 brew install node
