@@ -11,12 +11,11 @@ brew install mint
 
 # install CLI Apps
 brew install go
+brew install volta
 brew install rbenv
 brew install ghq
 brew install hub
-brew install node
 brew install peco
-brew install yarn
 brew install zsh-completions
 
 go install github.com/cuonglm/gogi/cmd/gogi@latest

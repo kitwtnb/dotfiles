@@ -43,6 +43,8 @@ export PATH=$HOME/homebrew/bin:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools/:$PATH
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH=$HOME/go/bin:$PATH
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 # alias
 alias l='ls -laG'
