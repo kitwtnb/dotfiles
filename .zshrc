@@ -41,10 +41,11 @@ export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/homebrew/bin:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools/:$PATH
-export PATH=$JAVA_HOME/bin:$PATH
 export PATH=$HOME/go/bin:$PATH
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+export JAVA_HOME=/usr/local/opt/openjdk@11
+export PATH=$JAVA_HOME/bin:$PATH
 
 # alias
 alias l='ls -laG'
@@ -64,7 +65,6 @@ alias gpp='git push --set-upstream origin `git symbolic-ref --short HEAD`'
 alias gpull='git pull'
 alias ghr='ghq list --full-path | peco | xargs rm -r'
 alias ggraph='git log --graph --date=short --decorate=short --pretty=format:"%Cgreen%h %Creset%cd %C(cyan)%cn %C(auto)%d %Creset%s"'
-alias cjava='export JAVA_HOME=`/usr/libexec/java_home -V 2>&1 | grep -E "^ " | sed "s/^ *//" | peco | cut -f 3`'
 
 # function
 function prompt_git_current_branch {
