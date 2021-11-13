@@ -66,6 +66,9 @@ alias gpull='git pull'
 alias ghr='ghq list --full-path | peco | xargs rm -r'
 alias ggraph='git log --graph --date=short --decorate=short --pretty=format:"%Cgreen%h %Creset%cd %C(cyan)%cn %C(auto)%d %Creset%s"'
 
+# initialize brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # function
 function prompt_git_current_branch {
   local branch_name st branch_status mark
