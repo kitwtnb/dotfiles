@@ -22,31 +22,26 @@ brew install zsh-completions
 
 go install github.com/cuonglm/gogi/cmd/gogi@latest
 
-gem install cocoapods
-
 # install GUI Apps
-brew cask install alfred
-brew cask install bettertouchtool
-brew cask install google-backup-and-sync
-brew cask install google-chrome
-brew cask install google-japanese-ime
-brew cask install inkdrop
-brew cask install iterm2
-brew cask install jetbrains-toolbox
-brew cask install karabiner-elements
-brew cask install visual-studio-code
-brew cask install fork
-brew cask install charles
-brew cask install discord
-brew cask install microsoft-teams
+brew install alfred
+brew install bettertouchtool
+brew install google-drive
+brew install google-chrome
+brew install atok
+brew install inkdrop
+brew install iterm2
+brew install jetbrains-toolbox
+brew install karabiner-elements
+brew install gitkraken
+brew install charles
+brew install discord
+brew install tweetbot
+brew install slack
+brew install microsoft-teams
 mas install 1333542190 # 1Password
 mas install 417375580 # BetterSnapTool
-mas install 497799835 # Xcode
 mas install 1176895641 # Spark
 mas install 539883307 # LINE
-mas install 1348617240 # FirstSeed Calendar
-mas install 803453959 # Slack
-mas install 1384080005 # Tweetbot
 
 # install dot files
 cp -f ./.gitconfig ~/
