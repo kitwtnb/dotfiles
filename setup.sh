@@ -38,10 +38,12 @@ brew install discord
 brew install tweetbot
 brew install slack
 brew install microsoft-teams
+brew tap sakebook/tap && brew install pbssc
 mas install 1333542190 # 1Password
 mas install 417375580 # BetterSnapTool
 mas install 1176895641 # Spark
 mas install 539883307 # LINE
+mas install 937984704 # Amphetamine
 
 # install dot files
 cp -f ./.gitconfig ~/

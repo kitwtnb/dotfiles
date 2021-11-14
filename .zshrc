@@ -46,6 +46,7 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export JAVA_HOME=/usr/local/opt/openjdk@11
 export PATH=$JAVA_HOME/bin:$PATH
+export PBSSC_IMAGE_PATH=~/Downloads
 
 # alias
 alias l='ls -laG'
