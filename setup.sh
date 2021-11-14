@@ -35,7 +35,6 @@ brew install karabiner-elements
 brew install gitkraken
 brew install charles
 brew install discord
-brew install tweetbot
 brew install slack
 brew install microsoft-teams
 brew tap sakebook/tap && brew install pbssc
@@ -44,6 +43,7 @@ mas install 417375580 # BetterSnapTool
 mas install 1176895641 # Spark
 mas install 539883307 # LINE
 mas install 937984704 # Amphetamine
+mas install 1384080005 # Tweetbot
 
 # install dot files
 cp -f ./.gitconfig ~/
