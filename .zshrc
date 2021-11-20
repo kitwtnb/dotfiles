@@ -44,7 +44,7 @@ export PATH=$HOME/Library/Android/sdk/platform-tools/:$PATH
 export PATH=$HOME/go/bin:$PATH
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
-export JAVA_HOME=/usr/local/opt/openjdk@11
+export JAVA_HOME=/opt/homebrew/opt/openjdk@11
 export PATH=$JAVA_HOME/bin:$PATH
 export PBSSC_IMAGE_PATH=~/Downloads
 
