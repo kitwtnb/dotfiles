@@ -19,6 +19,7 @@ brew install ghq
 brew install hub
 brew install peco
 brew install zsh-completions
+brew install jq
 
 go install github.com/cuonglm/gogi/cmd/gogi@latest
 
@@ -44,6 +45,7 @@ mas install 1176895641 # Spark
 mas install 539883307 # LINE
 mas install 937984704 # Amphetamine
 mas install 1384080005 # Tweetbot
+mas install 435410196 # Stay
 
 # install dot files
 cp -f ./.gitconfig ~/
