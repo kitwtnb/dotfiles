@@ -46,6 +46,7 @@ mas install 539883307 # LINE
 mas install 937984704 # Amphetamine
 mas install 1384080005 # Tweetbot
 mas install 435410196 # Stay
+mas install 499768540 # Power JSON Editor
 
 # install dot files
 cp -f ./.gitconfig ~/
