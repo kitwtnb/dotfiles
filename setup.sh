@@ -24,6 +24,7 @@ brew install jq
 go install github.com/cuonglm/gogi/cmd/gogi@latest
 
 # install GUI Apps
+brew install 1password
 brew install alfred
 brew install bettertouchtool
 brew install google-drive
@@ -39,7 +40,6 @@ brew install discord
 brew install slack
 brew install microsoft-teams
 brew tap sakebook/tap && brew install pbssc
-mas install 1333542190 # 1Password
 mas install 417375580 # BetterSnapTool
 mas install 1176895641 # Spark
 mas install 539883307 # LINE
