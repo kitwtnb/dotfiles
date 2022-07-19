@@ -26,6 +26,7 @@ go install github.com/cuonglm/gogi/cmd/gogi@latest
 # install GUI Apps
 brew install 1password
 brew install alfred
+brew install dropbox
 brew install bettertouchtool
 brew install google-drive
 brew install google-chrome
