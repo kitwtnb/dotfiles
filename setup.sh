@@ -39,6 +39,7 @@ brew install charles
 brew install discord
 brew install slack
 brew install microsoft-teams
+brew install --cask dash
 brew tap sakebook/tap && brew install pbssc
 mas install 417375580 # BetterSnapTool
 mas install 1176895641 # Spark
