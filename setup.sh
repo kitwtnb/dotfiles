@@ -30,7 +30,7 @@ brew install dropbox
 brew install bettertouchtool
 brew install google-drive
 brew install google-chrome
-brew install atok
+brew install google-japanese-ime
 brew install inkdrop
 brew install iterm2
 brew install jetbrains-toolbox
