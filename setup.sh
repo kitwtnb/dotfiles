@@ -11,7 +11,7 @@ brew install mas
 brew install mint
 
 # install CLI Apps
-brew install java11
+brew install openjdk@17
 brew install go
 brew install volta
 brew install rbenv

@@ -5,5 +5,4 @@ fullscreen = true
 font-feature = -calt
 font-feature = -dlig
 font-size = 18
-keybind = global:ctrl+space=toggle_visibility
 
