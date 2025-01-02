@@ -25,14 +25,13 @@ go install github.com/cuonglm/gogi/cmd/gogi@latest
 
 # install GUI Apps
 brew install 1password
-brew install alfred
-brew install dropbox
+brew install raycast
 brew install bettertouchtool
 brew install google-drive
 brew install google-chrome
 brew install google-japanese-ime
 brew install inkdrop
-brew install iterm2
+brew install ghostty
 brew install jetbrains-toolbox
 brew install karabiner-elements
 brew install gitkraken
