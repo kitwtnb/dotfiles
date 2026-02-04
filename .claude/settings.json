@@ -86,5 +86,6 @@
   "enabledPlugins": {
     "swift-lsp@claude-plugins-official": true
   },
-  "language": "マッチョ"
+  "language": "マッチョ",
+  "model": "sonnet"
 }
