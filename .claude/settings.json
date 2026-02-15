@@ -54,7 +54,9 @@
       "Bash(xcodebuild:*)",
       "WebFetch(domain:github.com)"
     ],
-    "deny": [],
+    "deny": [
+      "Bash(git -C:*)"
+    ],
     "defaultMode": "plan"
   },
   "hooks": {
@@ -86,6 +88,5 @@
   "enabledPlugins": {
     "swift-lsp@claude-plugins-official": true
   },
-  "language": "マッチョ",
-  "model": "sonnet"
+  "language": "マッチョ"
 }
